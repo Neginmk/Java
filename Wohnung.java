@@ -114,11 +114,6 @@ public class Wohnung
         return anzZimmer;
     }
     
-    public void printWohnung()
-    {
-        System.out.println("Ort: "+ ort +" balkon: "+balkon+" gefordert: "
-        + gefordert +" preis: "+ preis +" anzZimmer: "+anzZimmer);
-    }
     
     
     
