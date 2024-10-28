@@ -27,7 +27,7 @@ public class Wohnung
         
     }
     
-    public Wohnung(String Ort, boolean balkon)
+    public Wohnung(String ort, boolean balkon)
     {
         setOrt(ort);
         setBalkon(balkon);
@@ -45,7 +45,7 @@ public class Wohnung
         setAnzZimmer(4);
     }
     
-    public Wohnung(String Ort)
+    public Wohnung(String ort)
     {
         setOrt(ort);
         setBalkon(true);
@@ -115,21 +115,32 @@ public class Wohnung
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    public void printWohnung() {
+    if (balkon == true) {
+        System.out.println("ort: " + ort + " balkon:  balkon" + " gefordert: " 
+            + gefordert + " preis: " + preis + " anzZimmer: " + anzZimmer);
+    } else {
+        System.out.println("ort: " + ort + " balkon: no balkon" + " gefordert: " 
+            + gefordert + " preis: " + preis + " anzZimmer: " + anzZimmer);
+    }
 }
+
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
