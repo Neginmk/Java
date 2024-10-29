@@ -56,7 +56,7 @@ public class Wohnung
     
     public Wohnung()
     {
-        setOrt("Wien");
+        setOrt("Iran,Tehran");
         setBalkon(true);
         setGefordert(false);
         setPreis(200000);
@@ -123,9 +123,24 @@ public class Wohnung
         System.out.println("ort: " + ort + " balkon: no balkon" + " gefordert: " 
             + gefordert + " preis: " + preis + " anzZimmer: " + anzZimmer);
     }
+    }
+    
+    public String getInitialen()
+    
+    {
+        String initialen;
+        int pos;
+        
+        initialen = ort.substring(0,1);
+        pos = ort.indexOf(",")+1;
+        
+        initialen= initialen + ort.substring(pos , pos+ 1 );
+        
+        return initialen;
+    }
 }
 
-    }
+    
     
     
     
